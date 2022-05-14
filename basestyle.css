@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
 }
 
@@ -9,25 +9,43 @@
 
 .RedBack {
     background: rgb(221, 29, 29);
-    padding: 40px 40px 40px 40px; 
-}
-
-.RedBack table{
-    margin: 30px 126px 50px 126px;
+    padding: 40px 40px;
     text-align: center;
-    background-color: rgb(235, 97, 97);
 }
 
-.RedBack table .IcoArrow{
-    margin-bottom: 15px;
+    .RedBack table {
+        margin: 50px 20px;
+        display: inline-grid;
+        background-color: rgb(235, 97, 97);
+    }
 
+
+@media (max-width:1100px) {
+
+    table tr {
+        display: block;
+    }
+
+    table td {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        table td:nth-of-type(1) {
+            margin-top: 30px;
+        }
+}
+
+.RedBack table .IcoArrow {
+    margin-bottom: 15px;
     height: auto;
     width: auto;
 }
 
-.RedBack table h5{
+.RedBack table h5 {
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(247, 245, 245);
+    color: rgb(247, 245, 245);
 }
 
 .RedBack table h3 {
@@ -36,202 +54,188 @@
     color: rgb(247, 245, 245);
     cursor: pointer;
 }
-.RedBack table h3:hover
-{
-    opacity: 0.7;
-}
 
-.RedBack table img{
+    .RedBack table h3:hover {
+        opacity: 0.7;
+    }
+
+.RedBack table img {
     height: 200px;
     width: 250px;
 }
 
-    /*---- Title TEXT -----*/
-.RedBack h1{
-    margin: 0;
-    text-align: center;
+/*---- Title TEXT -----*/
+.RedBack h1 {
     color: rgb(243, 234, 234);
-    font: 160% lighter  'Roboto','Gill Sans', 'Gill Sans MT', Calibri ;
+    font: 160% lighter 'Roboto','Gill Sans', 'Gill Sans MT', Calibri;
 }
 
-.RedBack h4{
-    text-align: center;
+.RedBack h4 {
     color: rgb(211, 206, 206);
     font-weight: 100;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 /* CLASS BLUEBACK  */
 
-.BlueBack{
+.BlueBack {
     padding-top: 70px;
     padding-bottom: 85px;
     background: #3b8ce9;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-/* -- Title --  */
+    /* -- Title --  */
 
-.BlueBack h1{
-    color: white;
-    font: 160% lighter  'Roboto','Gill Sans', 'Gill Sans MT', Calibri ;
+    .BlueBack h1 {
+        color: white;
+        font: 160% lighter 'Roboto','Gill Sans', 'Gill Sans MT', Calibri;
+    }
+
+    .BlueBack h4 {
+        color: rgb(250, 250, 250);
+        font-weight: 100;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .BlueBack .IcoTick {
+        margin: 20px 40px;
+        align-self: center;
+        height: 40px;
+        width: 40px;
+    }
+
+    /* __ BODY __ */
+
+    .BlueBack .table {
+        align-self: center;
+        background-color: white;
+        width: 650px;
+    }
+
+
+@media(max-width:700px) {
+
+    .BlueBack .table {
+        width: 70%;
+    }
 }
 
-.BlueBack h4{
-    color: rgb(250, 250, 250);
-    font-weight: 100;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-}
-
-.BlueBack .IcoTick{
-
-    display: block;
-    margin: 20px auto 40px auto;
-
-    height: 40px;
-    width: 40px; 
-}
-
-/* __ BODY __ */
-
-.BlueBack .table{
-
-    display: block;
-    margin-left: 25%;
-    max-width: 50%;
-    background-color: white;
-    max-width: 650px;
-}
-
-
-
-.BlueBack .table input{
-
+.BlueBack .table input {
     border-radius: 5px;
     border: 1px solid rgb(184, 176, 176);
     color: rgb(39, 37, 37);
     padding: 10px 10px 10px 15px;
     margin-bottom: 5px;
     width: 400px;
-    margin-left: 120px;
 }
 
-.BlueBack .table input:hover{
-    border: 2px solid  #3b8ce9;
-}
+    .BlueBack .table input:hover {
+        border: 2px solid #3b8ce9;
+    }
 
-.BlueBack .table .button{
+.BlueBack .table .button {
     text-align: center;
-    margin: 25px 0 50px 42%;
+    margin-bottom: 70px;
+    margin-top: 25px;
     max-width: 150px;
-
-    background-color:  rgb(221, 29, 29);
+    background-color: rgb(221, 29, 29);
     color: rgb(243, 234, 234);
-    font: bolder  'Roboto','Gill Sans', 'Gill Sans MT', Calibri ;
+    font: bolder 'Roboto','Gill Sans', 'Gill Sans MT', Calibri;
     cursor: pointer;
     border-radius: 0;
 }
 
-.BlueBack .table .button:hover{
-    border: none;
-}
+    .BlueBack .table .button:hover {
+        border: none;
+    }
 
-.BlueBack .table h5{
-    text-align: center;
-
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-    margin-left: 80px;
-
+.BlueBack .table h5 {
+    padding: 30px 30px;
     color: rgb(163, 162, 162);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} 
 
 
 /* CLASS GRAYBACK  */
-
-.GrayBack{
+.GrayBack {
     background-color: rgb(43, 42, 42);
     padding-top: 30px;
     text-align: center;
 }
 
-.GrayBack h2{
-    margin-top: 35px;
-    margin-bottom: 15px;
-    color: white;
-    text-align: center;
-    font-family: Tahoma, sans-serif;
-    font-size: 30px;
-}
+    .GrayBack h2 {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        color: white;
+        font-family: Tahoma, sans-serif;
+        font-size: 30px;
+    }
 
-.GrayBack .IcoSocNet{
-    padding: 6px;
-    padding-left: 10px;
-    border: 2px solid gray;
-    cursor: pointer;
-    border-radius: 3px;
-    margin-right: 8px;
-
-}
+    .GrayBack .IcoSocNet {
+        padding: 6px;
+        padding-left: 10px;
+        border: 2px solid gray;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-right: 8px;
+    }
 
 
-.GrayBack img:nth-child(3),
-.GrayBack img:nth-child(5){
-    padding: 8px;
-}
+    .GrayBack img:nth-child(3),
+    .GrayBack img:nth-child(5) {
+        padding: 8px;
+    }
 
-.GrayBack img:hover{
-    padding: auto;
-    border: 2px solid rgb(211, 70, 15);
-}
+    .GrayBack img:hover {
+        border: 2px solid rgb(211, 70, 15);
+    }
 
-.GrayBack .label{
-    text-align: center;
-    margin: 20px 20px;
+    .GrayBack .label {
+        margin: 20px 20px;
+        color: rgb(184, 184, 184);
+        display: block;
+    }
 
-    color: rgb(184, 184, 184);
-    display: block;
-}
+    .GrayBack .email {
+        width: 40%;
+        background-color: rgb(75, 73, 73);
+        color: rgb(202, 200, 200);
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        outline: none;
+    }
 
-.GrayBack .email{
-    width: 40%;
-    background-color: rgb(75, 73, 73);
-    color: rgb(202, 200, 200);
-    border: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    outline: none;
-}
+    .GrayBack .ButtonSubs {
+        display: grid;
+        margin: 0 auto;
+        color: white;
+        background-color: rgb(43, 42, 42);
+        padding: 10px 25px 10px 25px;
+        border: 2px solid rgb(75, 73, 73);
+        border-radius: 2px;
+        margin-bottom: 60px;
+        font-size: 15px;
+        font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
 
-.GrayBack .ButtonSubs{
+        .GrayBack .ButtonSubs:hover {
+            border: 2px solid rgb(221, 29, 29);
+        }
 
-    display: block;
-    margin: 0 auto;
-    color: white;
-    background-color: rgb(43, 42, 42);
-    text-align: center;
-    padding: 10px 25px 10px 25px;
-    border: 2px solid rgb(75, 73, 73);
-    border-radius: 2px;
-    margin-bottom: 60px;
-    font-size: 15px;
-    font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
-    cursor: pointer;
+    .GrayBack .DownLabel {
+        padding: 15px 15px;
+        color: rgb(184, 184, 184);
+        background-color: rgb(75, 73, 73);
+        display: grid;
+    } 
 
-}
 
-.GrayBack .ButtonSubs:hover{
-    border: 2px solid rgb(221, 29, 29);
-}
 
-.GrayBack .DownLabel{
-    padding: 15px 15px;
-    color: rgb(184, 184, 184);
-    background-color: rgb(75, 73, 73);
-    display: block;
-    text-align: center;
-}
+
